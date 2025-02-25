@@ -7,7 +7,8 @@
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 20px; background: linear-gradient(to right, #1e1e1e, #3a3a3a); color: #fff; }
         header { background: #000; padding: 20px; font-size: 24px; letter-spacing: 2px; text-transform: uppercase; }
-        .gallery img, video { max-width: 90%; height: auto; margin: 10px; border-radius: 10px; box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 20px; }
+        .gallery img, .gallery video { max-width: 300px; height: auto; border-radius: 10px; box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); }
         footer { background: #000; padding: 10px; margin-top: 20px; font-size: 14px; letter-spacing: 1px; }
     </style>
 </head>
@@ -15,12 +16,25 @@
     <header>
         <h1>Sky Sight Vision - Gallery</h1>
     </header>
+
     <section class="gallery">
         <h2>Photo & Video Gallery</h2>
         <p>Explore our best aerial shots and drone videos.</p>
-        <video width="600" controls>
-            <source src="https://skysightvision.github.io/skysightvision/drone-video.mp4.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+
+        <!-- Images -->
+        <img src="https://skysightvision.github.io/skysightvision/images/photo1.jpg" alt="Aerial View 1">
+        <img src="https://skysightvision.github.io/skysightvision/images/photo2.jpg" alt="Aerial View 2">
+        <img src="https://skysightvision.github.io/skysightvision/images/photo3.jpg" alt="Aerial View 3">
+
+        <!-- Videos -->
+        <video width="300" controls>
+            <source src="https://skysightvision.github.io/skysightvision/videos/drone-video1.mp4" type="video/mp4">
+        </video>
+        <video width="300" controls>
+            <source src="https://skysightvision.github.io/skysightvision/videos/drone-video2.mp4" type="video/mp4">
+        </video>
+        <video width="300" controls>
+            <source src="https://skysightvision.github.io/skysightvision/videos/drone-video3.mp4" type="video/mp4">
         </video>
     </section>
     
