@@ -1,5 +1,5 @@
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,39 +7,39 @@
     <title>Gallery - Sky Sight Vision</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* General Styles */
         body { 
             font-family: 'Montserrat', sans-serif; 
             margin: 0; 
             padding: 0; 
-            background: linear-gradient(to right, #141e30, #243b55); 
-            color: #fff;
+            background: linear-gradient(to right, #2f2f2f, #444444); /* Dark grey gradient background */
+            color: #fff; 
+            text-align: center; 
         }
         header { 
             background: rgba(0, 0, 0, 0.8); 
             padding: 20px; 
-            font-size: 24px; 
+            font-size: 28px; 
+            font-weight: 600; 
             letter-spacing: 2px; 
             text-transform: uppercase; 
-            box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.4);
+            box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.4); 
         }
         h1 { 
             color: gold; 
         }
-        .gallery-container { 
-            max-width: 1200px; 
-            margin: 40px auto; 
-            padding: 30px; 
+        .gallery { 
             display: grid; 
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
             gap: 20px; 
-            justify-items: center;
+            padding: 30px; 
+            justify-content: center; 
+            align-items: center; 
         }
         .gallery-item { 
             position: relative; 
             overflow: hidden; 
             border-radius: 15px; 
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.4); 
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); 
             transition: transform 0.3s ease-in-out; 
         }
         .gallery-item:hover { 
@@ -48,24 +48,17 @@
         .gallery-item img, .gallery-item video { 
             width: 100%; 
             height: auto; 
-            display: block; 
-            border-radius: 15px; 
-            transition: transform 0.3s ease-in-out;
+            border-radius: 10px; 
+            transition: transform 0.3s ease-in-out; 
         }
-        .gallery-item:hover img, .gallery-item:hover video { 
+        .gallery-item img:hover, .gallery-item video:hover { 
             transform: scale(1.1); 
         }
-        .gallery-item video { 
-            object-fit: cover; 
-        }
-
         footer { 
-            background: rgba(0, 0, 0, 0.8); 
-            padding: 15px; 
-            text-align: center; 
+            background: rgba(0, 0, 0, 0.9); 
+            padding: 20px; 
             font-size: 14px; 
-            letter-spacing: 1px; 
-            margin-top: 40px; 
+            color: #bbb; 
         }
         footer a { 
             color: gold; 
@@ -81,9 +74,9 @@
         <h1>Sky Sight Vision - Gallery</h1>
     </header>
 
-    <section class="gallery-container">
+    <section class="gallery">
         <h2>Photo & Video Gallery</h2>
-        <p>Explore our best aerial shots and drone videos.</p>
+        <p>Explore our best aerial shots and drone videos captured from the sky.</p>
 
         <!-- Gallery Items -->
         <div class="gallery-item">
@@ -112,7 +105,7 @@
             </video>
         </div>
     </section>
-    
+
     <footer>
         <p>&copy; 2025 Sky Sight Vision. All Rights Reserved.</p>
         <p><a href="index.html">Back to Home</a></p>
